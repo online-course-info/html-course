@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to view course</title>
+</head>
+<body>
+    <form id="login_form" method="post">
+        <input type="text" id="username" placeholder="username" required>
+        <br>
+        <input type="password" id="password" placeholder="password" required>
+        <br>
+        <button id="login_btn" onclick="login()">Log In</button>
+    </form>
+</body>
+<script type="text/javascript">
+    function login()
+    {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if(username == "Alex" || password == "alexandrei0805")
+        {
+            window.location.replace = "";
+        }
+        else
+        {
+            window.location.replace = "";
+        }
+    }
+</script>
+<style>
+    #login_form
+    {
+        position: absolute;
+        left:40%;
+        top:30%;
+        height: 50%;
+    }
+    #login_btn
+    {
+        opacity: 70%;
+        border-top-left-radius: 0.2cm;
+        border-top-right-radius: 0.2cm;
+        border-bottom-left-radius: 0.2cm;
+        border-bottom-right-radius: 0.2cm;
+        width: 3cm;
+        height:0.7cm;
+        border: 0;
+        background-color: rgb(67, 67, 221);
+        color:white;
+        position:absolute;
+        top:26%;
+        left: 15%;    
+        transition: .5s;
+    }
+    #login_btn:hover
+    {
+        opacity: 100%;
+    }
+    #username
+    {
+        height:0.7cm;
+    }
+    #password
+    {
+        position: absolute;
+        top:12.5%;
+        height: 0.7cm;
+    }
+</style>
+</html>
